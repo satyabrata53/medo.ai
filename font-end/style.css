@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+nav a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+body {
+  background-color: #1a1a2e;
+}
+
+#logo {
+  position: absolute; /* Makes it fixed at the specified location */
+  top: 30px; /* Adjusts the distance from the top */
+  left: 20px; /* Adjusts the distance from the left */
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section 1 (Hero) */
+.sec-1 {
+  background: url('./Abstract\ Fluid\ Gradient\ Purple\ Blue\ Color\ and\ Circled\ Object\ Background.jpg') no-repeat center center/cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 20px;
+}
+
+.content {
+  max-width: 850px;
+  margin: 180px auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.content a {
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.content a:hover {
+  background-color: #2b55d47e;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.hidenav {
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.hidenav:hover {
+  background-color: #2b55d47e;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar li:hover {
+  background-color: #2b55d47e;
+  border-radius: 10px;
+}
+
+.hidesbar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .hidenav {
+    display: none;
+  }
+
+  .hidesbar {
+    display: block;
+  }
+}
+
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  background-color: #191c5e; /* Updated background color for sections */
+}
+
+#about,
+#blogs,
+#projects {
+  text-align: center;
+}
+
+#about p,
+#projects p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #e43f5a;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #d6324e;
+}
+
+/* Contact Section */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Blue transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+form button {
+  background-color: #e43f5a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #d6324e;
+}
+
+/* Blog Section */
+/* Ensure consistent card sizes */
+.card {
+  height: 100%; /* Make all cards the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Fix image sizes for consistency */
+.card-img-top {
+  object-fit: cover; /* Crop the image to fit the card */
+  height: 200px; /* Set a uniform height for images */
+  width: 100%; /* Make sure the image spans the full card width */
+}
+
+/* Styling for the card body */
+.card-body {
+  flex: 1; /* Allow the card body to take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ensure uniform spacing and alignment */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styling */
+.btn-primary {
+  align-self: start; /* Align the button to the left */
+  margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #162447;
+  color: #fff;
+}
+
+footer a {
+  color: #e43f5a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#ct1{
+  color: black;
+}
+
+
