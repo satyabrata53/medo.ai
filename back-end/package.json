@@ -20,6 +20,4 @@
   },
   "description": ""
 }
-"scripts": {
-  "start": "node server.js"
-}
+
