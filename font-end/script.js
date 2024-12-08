@@ -8,7 +8,7 @@ document.getElementById('symptomForm').addEventListener('submit', async (event) 
   resultDiv.innerHTML = 'Loading...';
 
   try {
-    const response = await fetch('https://medo-hy0fybeg4-satyabratas-projects.vercel.app', {
+    const response = await fetch('https://medo-ai.onrender.com/api/health/query', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: symptom }),
