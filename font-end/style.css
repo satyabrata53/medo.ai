@@ -163,6 +163,7 @@ section {
 #about p,
 #projects p {
   font-size: 1rem;
+  color: black;
   line-height: 1.6;
   max-width: 700px;
   margin: 20px auto;
