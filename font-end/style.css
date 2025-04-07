@@ -255,6 +255,7 @@ form button:hover {
 .card-text {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color:black;
 }
 
 /* Button styling */
